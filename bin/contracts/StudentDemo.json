@@ -1,0 +1,476 @@
+{
+    "contractName": "StudentDemo",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "getName",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "init",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "student",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "age",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.29+commit.ab55807c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"init\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"student\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"age\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/weiwei/Desktop/\\u5f00\\u53d1/\\u5f00\\u53d1\\u9879\\u76ee/solidity-project/contracts/student.sol\":\"StudentDemo\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/Users/weiwei/Desktop/\\u5f00\\u53d1/\\u5f00\\u53d1\\u9879\\u76ee/solidity-project/contracts/student.sol\":{\"keccak256\":\"0x57032231760b4433736b1fd1dbf57447318a97646a55acf7e438f40b90ec1c2d\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://868b816aec39ac048f1dadb70780989b75966dce267ae080ea1d74c3fdcf374f\",\"dweb:/ipfs/QmdD3FBC2FJ2oTSDetaRHaXADzdvR312iAXgx2XSu5RXLG\"]}},\"version\":1}",
+    "bytecode": "608080604052346015576102ad908161001a8239f35b5f80fdfe60806040526004361015610011575f80fd5b5f3560e01c806317d7de7c14610117578063699450e8146100db5763e1c7392a1461003a575f80fd5b346100d7575f3660031901126100d7576100545f5461016e565b601f8111610075575b6010673d3430b733b9b0b760c11b015f556012600155005b601f0160051c7f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563017f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e5635b8181106100cc575061005d565b5f81556001016100bf565b5f80fd5b346100d7575f3660031901126100d75761010d6100f66101a6565b60015460405192839260408452604084019061014a565b9060208301520390f35b346100d7575f3660031901126100d7576101466101326101a6565b60405191829160208352602083019061014a565b0390f35b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b90600182811c9216801561019c575b602083101461018857565b634e487b7160e01b5f52602260045260245ffd5b91607f169161017d565b604051905f5f546101b68161016e565b808552906001811690811561025b5750600114610207575b50829003601f01601f1916820167ffffffffffffffff8111838210176101f357604052565b634e487b7160e01b5f52604160045260245ffd5b5f8080529091507f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e5635b8282106102455750602091508301015f6101ce565b6001816020925483858901015201910190610230565b90506020925060ff191682850152151560051b8301015f6101ce56fea26469706673582212208cb943003198ba4a1d896c87968ab9a71998f48960145855c62f0136d123b9ea64736f6c634300081d0033",
+    "deployedBytecode": "60806040526004361015610011575f80fd5b5f3560e01c806317d7de7c14610117578063699450e8146100db5763e1c7392a1461003a575f80fd5b346100d7575f3660031901126100d7576100545f5461016e565b601f8111610075575b6010673d3430b733b9b0b760c11b015f556012600155005b601f0160051c7f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563017f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e5635b8181106100cc575061005d565b5f81556001016100bf565b5f80fd5b346100d7575f3660031901126100d75761010d6100f66101a6565b60015460405192839260408452604084019061014a565b9060208301520390f35b346100d7575f3660031901126100d7576101466101326101a6565b60405191829160208352602083019061014a565b0390f35b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b90600182811c9216801561019c575b602083101461018857565b634e487b7160e01b5f52602260045260245ffd5b91607f169161017d565b604051905f5f546101b68161016e565b808552906001811690811561025b5750600114610207575b50829003601f01601f1916820167ffffffffffffffff8111838210176101f357604052565b634e487b7160e01b5f52604160045260245ffd5b5f8080529091507f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e5635b8282106102455750602091508301015f6101ce565b6001816020925483858901015201910190610230565b90506020925060ff191682850152151560051b8301015f6101ce56fea26469706673582212208cb943003198ba4a1d896c87968ab9a71998f48960145855c62f0136d123b9ea64736f6c634300081d0033",
+    "sourceMap": "66:317:0:-:0;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "66:317:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;66:317:0;;;;;;;;:::i;:::-;;;;;;;-1:-1:-1;;;;;66:317:0;;272:2;258:11;66:317;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;66:317:0;;;;;161:22;;:::i;:::-;;66:317;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;-1:-1:-1;;66:317:0;;;;;;;:::i;:::-;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;66:317:0;;;;;;;;-1:-1:-1;;66:317:0;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;-1:-1:-1;66:317:0;;;;;-1:-1:-1;;66:317:0;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;-1:-1:-1;66:317:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+    "sourcePath": "/Users/weiwei/Desktop/开发/开发项目/solidity-project/contracts/student.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.29+commit.ab55807c"
+    },
+    "ast": {
+        "absolutePath": "/Users/weiwei/Desktop/开发/开发项目/solidity-project/contracts/student.sol",
+        "exportedSymbols": {
+            "StudentDemo": [
+                35
+            ]
+        },
+        "id": 36,
+        "license": "UNLICENSED",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".29"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "39:25:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "StudentDemo",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 35,
+                "linearizedBaseContracts": [
+                    35
+                ],
+                "name": "StudentDemo",
+                "nameLocation": "75:11:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "canonicalName": "StudentDemo.Student",
+                        "id": 6,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 3,
+                                "mutability": "mutable",
+                                "name": "name",
+                                "nameLocation": "126:4:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 6,
+                                "src": "119:11:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "119:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 5,
+                                "mutability": "mutable",
+                                "name": "age",
+                                "nameLocation": "146:3:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 6,
+                                "src": "140:9:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 4,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "140:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Student",
+                        "nameLocation": "101:7:0",
+                        "nodeType": "StructDefinition",
+                        "scope": 35,
+                        "src": "94:62:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "699450e8",
+                        "id": 9,
+                        "mutability": "mutable",
+                        "name": "student",
+                        "nameLocation": "176:7:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 35,
+                        "src": "161:22:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Student_$6_storage",
+                            "typeString": "struct StudentDemo.Student"
+                        },
+                        "typeName": {
+                            "id": 8,
+                            "nodeType": "UserDefinedTypeName",
+                            "pathNode": {
+                                "id": 7,
+                                "name": "Student",
+                                "nameLocations": [
+                                    "161:7:0"
+                                ],
+                                "nodeType": "IdentifierPath",
+                                "referencedDeclaration": 6,
+                                "src": "161:7:0"
+                            },
+                            "referencedDeclaration": 6,
+                            "src": "161:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Student_$6_storage_ptr",
+                                "typeString": "struct StudentDemo.Student"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 24,
+                            "nodeType": "Block",
+                            "src": "213:68:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 16,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "expression": {
+                                                "id": 12,
+                                                "name": "student",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 9,
+                                                "src": "223:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Student_$6_storage",
+                                                    "typeString": "struct StudentDemo.Student storage ref"
+                                                }
+                                            },
+                                            "id": 14,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberLocation": "231:4:0",
+                                            "memberName": "name",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 3,
+                                            "src": "223:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "hexValue": "7a68616e6773616e",
+                                            "id": 15,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "string",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "238:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_stringliteral_8929153959cc17e50b39a87e7ecd8b282aaf8735115429d3c6539ae16bdabc6c",
+                                                "typeString": "literal_string \"zhangsan\""
+                                            },
+                                            "value": "zhangsan"
+                                        },
+                                        "src": "223:25:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 17,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "223:25:0"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 22,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "expression": {
+                                                "id": 18,
+                                                "name": "student",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 9,
+                                                "src": "258:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Student_$6_storage",
+                                                    "typeString": "struct StudentDemo.Student storage ref"
+                                                }
+                                            },
+                                            "id": 20,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberLocation": "266:3:0",
+                                            "memberName": "age",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 5,
+                                            "src": "258:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "hexValue": "3138",
+                                            "id": 21,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "272:2:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_18_by_1",
+                                                "typeString": "int_const 18"
+                                            },
+                                            "value": "18"
+                                        },
+                                        "src": "258:16:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 23,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "258:16:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "e1c7392a",
+                        "id": 25,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "init",
+                        "nameLocation": "199:4:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "203:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 11,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "213:0:0"
+                        },
+                        "scope": 35,
+                        "src": "190:91:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 33,
+                            "nodeType": "Block",
+                            "src": "345:36:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "expression": {
+                                            "id": 30,
+                                            "name": "student",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 9,
+                                            "src": "362:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Student_$6_storage",
+                                                "typeString": "struct StudentDemo.Student storage ref"
+                                            }
+                                        },
+                                        "id": 31,
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberLocation": "370:4:0",
+                                        "memberName": "name",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 3,
+                                        "src": "362:12:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 29,
+                                    "id": 32,
+                                    "nodeType": "Return",
+                                    "src": "355:19:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "17d7de7c",
+                        "id": 34,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getName",
+                        "nameLocation": "300:7:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 26,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "307:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 29,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 28,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 34,
+                                    "src": "330:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 27,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "330:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "329:15:0"
+                        },
+                        "scope": 35,
+                        "src": "291:90:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 36,
+                "src": "66:317:0",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "39:344:0"
+    },
+    "functionHashes": {
+        "getName()": "17d7de7c",
+        "init()": "e1c7392a",
+        "student()": "699450e8"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "137000",
+            "executionCost": "190",
+            "totalCost": "137190"
+        },
+        "external": {
+            "getName()": "infinite",
+            "init()": "infinite",
+            "student()": "infinite"
+        }
+    }
+}
